@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/moment.js"></script>
+</head>
+<body>
+    <div>
+        <script>
+            // 测试当天的时间: 2019年1月21日下午
+
+
+            // 取当天时间,以YYYY年MM月DD日形式显示
+            // moment().format('YYYY年MM月DD日') // 2019年01月21日
+
+            // moment().format('YYYY-MM-DD HH:mm:ss')  //  2019-01-21 16:12:52
+
+            // moment(1411641720000).format('YYYY-MM-DD HH:mm:ss')  // September 25th 2014, 6:42:00 pm
+            
+            // moment().format('MMMM Do YYYY, h:mm:ss a'); // January 21st 2019, 4:12:52 pm
+
+            // moment().format('dddd');                    // Monday
+            // moment().format('d');                    // 1 (注: 星期一)
+
+            // moment().format("MMM Do YY");               // Jan 21st 19
+
+            // moment().format('YYYY [escaped] YYYY');     // 2019 escaped 2019
+
+            // moment().format();                          // 2019-01-21T16:08:53+08:00
+
+            // moment().subtract(10, 'days').calendar()  // 01/11/2019 
+            // moment().subtract(3, 'days').calendar();  // Last Friday at 5:19 PM
+            // moment().subtract(1, 'days').calendar();  // Yesterday at 5:22 PM
+            // moment().calendar();              // Today at 5:22 PM
+            // moment().add(1, 'days').calendar();       // Tomorrow at 5:23 PM
+            // moment().add(3, 'days').calendar();       // Thursday at 5:23 PM
+            // moment().add(10, 'days').calendar();      // 01/31/2019
+
+
+            // 20120901相对当前日期是6年前
+            // moment('20120901', 'YYYYMMDD').fromNow()  // 6 years ago
+
+            // 获取前一天日期
+            // moment().day(0).format('YYYY-MM-DD')  // 2019-01-20
+
+            // 获取本周三日期
+            // moment().weekday(3).format('YYYY-MM-DD')  // 2019-01-23
+
+            // 获取上周五日期
+            // 可以简单理解为上周倒数第几天，上周倒数第三天就是上周五了，和当天日期无关
+            // moment().weekday(-2).format('YYYY-MM-DD')  // 2019-01-18
+
+            // 获取去年今天的日期，格式以YYYY-MM-DD显示
+            // moment().subtract(1, 'years').format('YYYY-MM-DD')  // 2019-1-21
+
+            // 获取上个月今天的日期，格式以YYYY-MM-DD显示
+            // moment().subtract(1, 'months').format('YYYY-MM-DD')  // 2018-12-21
+
+            // 获取前一天日期，格式以YYYY-MM-DD形式显示
+            // moment().subtract(1, 'days').format('YYYY-MM-DD')  // 2019-01-20
+
+            // 获取两个小时之后的时间
+            // moment().subtract(-2, 'hours').format('YYYY-MM-DD HH:mm:ss')  // 2019-01-21 15:15:23
+            // moment().add(2,'hours').format('YYYY-MM-DD HH:mm:ss');  // 2019-01-21 15:15:23
+
+            
+            // moment.locale();         // en
+            // moment().format('LT');   // 5:27 PM
+            // moment().format('LTS');  // 5:27:10 PM
+            // moment().format('L');    // 01/21/2019
+            // moment().format('l');    // 1/21/2019
+            // moment().format('LL');   // January 21, 2019
+            // moment().format('ll');   // Jan 21, 2019
+            // moment().format('LLL');  // January 21, 2019 5:27 PM
+            // moment().format('lll');  // Jan 21, 2019 5:27 PM
+            // moment().format('LLLL'); // Monday, January 21, 2019 5:27 PM
+            // moment().format('llll'); // Mon, Jan 21, 2019 5:28 PM
+
+            
+            
+            
+
+
+        </script>
+    </div>
+</body>
+</html>
